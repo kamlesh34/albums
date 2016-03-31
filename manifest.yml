@@ -1,0 +1,8 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: chd-ind.mybluemix.net
+  name: albums
+  host: albums
+  disk_quota: 1024M
