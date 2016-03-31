@@ -1,0 +1,17 @@
+<%=form_for :album, :url => user_albums_path, :method => :post do |f| %>
+
+<div class= "input-group">
+<%= f.text_field :name, placeholder: "Enter Album Name", class: "form-control"%></div><br>
+
+							<div class="btn-group btn-group-justified" role="group">
+							<div class="btn-group" role="group">
+		<%= f.submit :submit, remote: true, class: "btn btn-success btn-md add_album"%>
+							</div>
+							<div class="btn-group">
+		<%= link_to "Cancel", :back, class: "btn btn-warning btn-md"%>
+							</div>
+
+							</div>
+
+
+<%end%>
